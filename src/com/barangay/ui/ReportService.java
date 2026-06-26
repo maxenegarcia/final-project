@@ -1,4 +1,4 @@
-package com.barangay.services;
+package com.barangay.ui;
 
 import com.barangay.models.Resident;
 import com.barangay.models.BarangayService;

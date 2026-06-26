@@ -1,5 +1,7 @@
-package com.barangay.exceptions.exceptions;
+package com.barangay.exceptions;
 
-public class PaymentProcessingException {
-    
+public class PaymentProcessingException extends Exception {
+    public PaymentProcessingException(String msg) {
+        super(msg);
+    }
 }

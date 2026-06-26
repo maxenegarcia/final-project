@@ -38,7 +38,7 @@ public class SearchEngine {
             String keyword
     ) {
         return requests.stream()
-                .filter(r -> r.residentName.toLowerCase()
+                .filter(r -> r.getResidentName().toLowerCase()
                 .contains(keyword.toLowerCase()))
                 .collect(Collectors.toList());
     }

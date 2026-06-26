@@ -22,4 +22,8 @@ public abstract class BarangayService {
     public ServiceStatus getStatus() {
         return status;
     }
+
+    public String getResidentName() {
+        return residentName;
+    }
 }

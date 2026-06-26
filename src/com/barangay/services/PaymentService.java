@@ -7,6 +7,6 @@ public class PaymentService {
     }
 
     public void processPayment(double amount, String ref) {
-        System.out.println("Processing GCASH payment: " + ref);
+        System.out.println("Processing GCASH payment: " + amount + " (Ref: " + ref + ")");
     }
 }

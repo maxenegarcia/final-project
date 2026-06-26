@@ -1,22 +1,17 @@
 package com.barangay.models;
 
-public abstract class User {
+public class Admin extends User {
 
-    protected String id;
-    protected String name;
-
-    public User(String id, String name) {
-        this.id = id;
-        this.name = name;
+    public Admin(String id, String name) {
+        super(id, name);
     }
 
-    public abstract void accessSystem();
-
-    public String getId() {
-        return id;
+    @Override
+    public void accessSystem() {
+        System.out.println("Admin access: full system control.");
     }
 
-    public String getName() {
-        return name;
+    public void approveRequest() {
+        System.out.println("Admin approving request...");
     }
 }
